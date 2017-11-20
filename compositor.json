@@ -7,84 +7,26 @@
   "title": "jj",
   "branch": "",
   "style": {
-    "name": "Default",
+    "name": "Williamsburg",
     "componentSet": {
       "nav": "nav/BasicNav",
-      "header": "header/BannerHeader",
-      "article": "article/BasicArticle",
+      "header": "header/LightBannerHeader",
+      "article": "article/ReaderArticle",
       "footer": "footer/BasicFooter"
     },
-    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
-    "fontWeight": 400,
-    "bold": 600,
-    "lineHeight": 1.5,
-    "typeScale": [
-      72,
-      48,
-      24,
-      20,
-      16,
-      14,
-      12
-    ],
-    "monospace": "Menlo, monospace",
+    "fontFamily": "Montserrat, sans-serif",
     "heading": {
-      "fontFamily": null,
-      "fontStyle": null,
       "fontWeight": 600,
-      "lineHeight": 1.25,
-      "textTransform": null,
-      "letterSpacing": null
-    },
-    "h0": {},
-    "h1": {},
-    "h2": {},
-    "h3": {},
-    "h4": {},
-    "h5": {},
-    "h6": {},
-    "alternativeText": {},
-    "space": [
-      0,
-      8,
-      16,
-      32,
-      48,
-      64,
-      96
-    ],
-    "layout": {
-      "maxWidth": 1024,
-      "centered": false
+      "letterSpacing": "0.1em"
     },
     "colors": {
-      "text": "#111",
+      "text": "#346",
       "background": "#fff",
-      "primary": "#08e",
-      "secondary": "#059",
-      "highlight": "#e08",
-      "border": "#ddd",
-      "muted": "#eee"
-    },
-    "border": {
-      "width": 1,
-      "radius": 2
-    },
-    "link": {},
-    "button": {
-      "hover": {
-        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
-      }
-    },
-    "input": {},
-    "body": {
-      "margin": 0
-    },
-    "breakpoints": {
-      "xs": "@media screen and (max-width:40em)",
-      "sm": "@media screen and (min-width:40em)",
-      "md": "@media screen and (min-width:52em)",
-      "lg": "@media screen and (min-width:64em)"
+      "primary": "#0099e0",
+      "secondary": "#ab61ff",
+      "highlight": "#f7b",
+      "muted": "#fffab3",
+      "border": "#ccd"
     }
   },
   "content": [
@@ -106,31 +48,6 @@
       ]
     },
     {
-      "component": "header",
-      "heading": "jss",
-      "subhead": "A lib for generating CSS from JavaScript.",
-      "children": [
-        {
-          "component": "ui/TweetButton",
-          "text": "jss: A lib for generating CSS from JavaScript.",
-          "url": "https://jsstyles.github.io/repl/"
-        },
-        {
-          "component": "ui/GithubButton",
-          "user": "b2whats",
-          "repo": "jss"
-        }
-      ],
-      "text": "v6.5.0"
-    },
-    {
-      "component": "article",
-      "metadata": {
-        "source": "github.readme"
-      },
-      "html": "\n<p><a href=\"https://gitter.im/cssinjs/lobby\"><img src=\"https://badges.gitter.im/JoinChat.svg\"></a>\n<a href=\"https://travis-ci.org/cssinjs/jss\"><img src=\"https://travis-ci.org/cssinjs/jss.svg?branch=master\"></a>\n<a href=\"https://codecov.io/gh/cssinjs/jss\"><img src=\"https://codecov.io/gh/cssinjs/jss/branch/master/graph/badge.svg\"></a>\n<a href=\"https://www.bithound.io/cssinjs/jss\"><img src=\"https://www.bithound.io/cssinjs/jss/badges/score.svg\"></a></p>\n<p><a href=\"https://medium.com/@oleg008/jss-is-css-d7d41400b635\">JSS is a better abstraction</a> over CSS. It uses JavaScript as a language to describe styles in a declarative and maintainable way. It is a <a href=\"https://github.com/cssinjs/jss/blob/master/docs/performance.md\">high performance</a> JS to CSS compiler which works at runtime and server-side. You can use it with <a href=\"https://github.com/cssinjs/react-jss\">React</a> or with any other library. It is about 5KB (minfied and gzipped) and is extensible via <a href=\"./docs/plugins.md\">plugins</a> API.</p>\n<h2>Libraries on top of JSS</h2>\n<ul>\n<li><a href=\"https://github.com/cssinjs/react-jss\">React-JSS</a> integration for React.</li>\n<li><a href=\"https://github.com/nathanmarks/jss-theme-reactor\">Theme Reactor</a> Experimental React integration with theming.</li>\n<li><a href=\"https://github.com/cssinjs/aphrodite-jss\">Aphrodite-JSS</a> provides Aphrodite like api on top of JSS.</li>\n<li><a href=\"https://github.com/milesj/aesthetic/tree/master/packages/aesthetic\">Aesthetic</a> A React style abstraction layer with theme support.</li>\n</ul>\n<h2>TOC</h2>\n<ol>\n<li><a href=\"https://github.com/cssinjs/examples\">Live examples</a>.</li>\n<li><a href=\"./docs/benefits.md\">Benefits</a></li>\n<li><a href=\"./docs/setup.md\">Setup</a></li>\n<li><a href=\"./docs/json-api.md\">JSON API (JSS Syntax)</a></li>\n<li><a href=\"./docs/js-api.md\">JavaScript API</a></li>\n<li><a href=\"./docs/ssr.md\">Server-side rendering</a></li>\n<li><a href=\"./docs/performance.md\">Performance</a></li>\n<li><a href=\"./docs/plugins.md\">Plugins API</a></li>\n<li><a href=\"https://github.com/cssinjs?q=plugin\">Official plugins</a></li>\n<li><a href=\"./docs/external-projects.md\">External projects</a></li>\n<li><a href=\"https://github.com/cssinjs/cli\">CLI Converter</a></li>\n<li><a href=\"./contributing.md\">Contributing</a></li>\n</ol>\n<h2>Example</h2>\n<p>You need to <a href=\"./docs/setup.md#setup-with-plugins\">setup plugins</a> before.\nYou can use a <a href=\"https://github.com/cssinjs/jss-preset-default\">preset</a> for a quick setup with default plugins.</p>\n<pre><span class=\"hljs-keyword\">import</span> jss <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;jss&apos;</span>\n<span class=\"hljs-keyword\">import</span> preset <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;jss-preset-default&apos;</span>\n<span class=\"hljs-keyword\">import</span> color <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;color&apos;</span>\n\n<span class=\"hljs-comment\">// One time setup with default plugins and settings.</span>\njss.setup(preset())\n\n<span class=\"hljs-keyword\">const</span> styles = {\n  <span class=\"hljs-attr\">button</span>: {\n    <span class=\"hljs-attr\">fontSize</span>: <span class=\"hljs-number\">12</span>,\n    <span class=\"hljs-string\">&apos;&amp;:hover&apos;</span>: {\n      <span class=\"hljs-attr\">background</span>: <span class=\"hljs-string\">&apos;blue&apos;</span>\n    }\n  },\n  <span class=\"hljs-attr\">ctaButton</span>: {\n    <span class=\"hljs-attr\">extend</span>: <span class=\"hljs-string\">&apos;button&apos;</span>,\n    <span class=\"hljs-string\">&apos;&amp;:hover&apos;</span>: {\n      <span class=\"hljs-attr\">background</span>: color(<span class=\"hljs-string\">&apos;blue&apos;</span>).darken(<span class=\"hljs-number\">0.3</span>).hex()\n    }\n  },\n  <span class=\"hljs-string\">&apos;@media (min-width: 1024px)&apos;</span>: {\n    <span class=\"hljs-attr\">button</span>: {\n      <span class=\"hljs-attr\">width</span>: <span class=\"hljs-number\">200</span>\n    }\n  }\n}\n\n<span class=\"hljs-keyword\">const</span> {classes} = jss.createStyleSheet(styles).attach()\n\n<span class=\"hljs-built_in\">document</span>.body.innerHTML = <span class=\"hljs-string\">`\n  &lt;button class=&quot;<span class=\"hljs-subst\">${classes.button}</span>&quot;&gt;Button&lt;/button&gt;\n  &lt;button class=&quot;<span class=\"hljs-subst\">${classes.ctaButton}</span>&quot;&gt;CTA Button&lt;/button&gt;\n`</span></pre><p>Result</p>\n<pre><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">head</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">style</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">&quot;text/css&quot;</span>&gt;</span><span class=\"css\">\n    <span class=\"hljs-selector-class\">.button-123456</span> {\n      <span class=\"hljs-attribute\">font-size</span>: <span class=\"hljs-number\">12px</span>;\n    }\n    <span class=\"hljs-selector-class\">.button-123456</span><span class=\"hljs-selector-pseudo\">:hover</span> {\n      <span class=\"hljs-attribute\">background</span>: blue;\n    }\n    <span class=\"hljs-selector-class\">.ctaButton-789012</span> {\n      <span class=\"hljs-attribute\">font-size</span>: <span class=\"hljs-number\">12px</span>;\n    }\n    <span class=\"hljs-selector-class\">.ctaButton-789012</span><span class=\"hljs-selector-pseudo\">:hover</span> {\n      <span class=\"hljs-attribute\">background</span>: red;\n    }\n    @<span class=\"hljs-keyword\">media</span> (min-width: <span class=\"hljs-number\">1024px</span>) {\n      <span class=\"hljs-selector-class\">.button-123456</span> {\n        <span class=\"hljs-attribute\">min-width</span>: <span class=\"hljs-number\">200px</span>;\n      }\n    }\n  </span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">style</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">head</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">body</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;button-123456&quot;</span>&gt;</span>Button<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;ctaButton-789012&quot;</span>&gt;</span>CTA Button<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">body</span>&gt;</span></pre><h2>When should I use it?</h2>\n<ul>\n<li>You build a JavaScript heavy application.</li>\n<li>You use components based architecture.</li>\n<li>You build a reusable UI library.</li>\n<li>You need a collision free CSS (external content, third-party UI components ...).</li>\n<li>You need code sharing between js and css.</li>\n<li>Minimal download size is important to you.</li>\n<li>Robustness and code reuse is important to you.</li>\n<li>Ease of maintenance is important to you.</li>\n<li>You just want to use any of its <a href=\"./docs/benefits.md\">benefits</a></li>\n</ul>\n<h2>Roadmap</h2>\n<ul>\n<li>Make it easier for newcomers to setup jss with plugins (like presets).</li>\n<li>Make JSON DSL even better, for e.g. <a href=\"https://github.com/typical000/jss-expand\">jss-expand</a>.</li>\n<li>Make it easy to see when changes in the core break plugins (integrate plugins test suite).</li>\n<li>Make community create plugins (better plugins API documentation, infrastructure).</li>\n<li>Do more benchmarking, include plugins, always track perf regressions.</li>\n<li>Introduce a way for theming with react-jss or replace it by <a href=\"https://github.com/nathanmarks/jss-theme-reactor\">jss-theme-reactor</a></li>\n<li>Make SSR even better (vendor prefixer, smaller critical CSS)</li>\n<li>Make CLI tool better, allow integration of styles written in various preprocessing languages as well as pure css.</li>\n<li>React Native support.</li>\n<li>Add converters stylus, sass and co. to <a href=\"https://github.com/cssinjs/cli\">cli</a> with constants reuse.</li>\n</ul>\n<h2>Browsers Support</h2>\n<p>We have automated tests running in <a href=\"./browsers.json\">real browsers</a>.</p>\n<h2>License</h2>\n<p>MIT</p>\n<h2>Thanks</h2>\n<p>Thanks to <a href=\"https://www.browserstack.com\">BrowserStack</a> for providing the infrastructure that allows us to run our tests in real browsers and to all awesome <a href=\"https://github.com/cssinjs/jss/graphs/contributors\">contributors</a>.</p>\n"
-    },
-    {
       "component": "footer",
       "links": [
         {
@@ -142,6 +59,13 @@
           "text": "b2whats"
         }
       ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p><a href=\"https://gitter.im/cssinjs/lobby\"><img src=\"https://badges.gitter.im/JoinChat.svg\"></a>\n<a href=\"https://travis-ci.org/cssinjs/jss\"><img src=\"https://travis-ci.org/cssinjs/jss.svg?branch=master\"></a>\n<a href=\"https://codecov.io/gh/cssinjs/jss\"><img src=\"https://codecov.io/gh/cssinjs/jss/branch/master/graph/badge.svg\"></a>\n<a href=\"https://www.bithound.io/cssinjs/jss\"><img src=\"https://www.bithound.io/cssinjs/jss/badges/score.svg\"></a></p>\n<p><a href=\"https://medium.com/@oleg008/jss-is-css-d7d41400b635\">JSS is a better abstraction</a> over CSS. It uses JavaScript as a language to describe styles in a declarative and maintainable way. It is a <a href=\"https://github.com/cssinjs/jss/blob/master/docs/performance.md\">high performance</a> JS to CSS compiler which works at runtime and server-side. You can use it with <a href=\"https://github.com/cssinjs/react-jss\">React</a> or with any other library. It is about 5KB (minfied and gzipped) and is extensible via <a href=\"./docs/plugins.md\">plugins</a> API.</p>\n<h2>Libraries on top of JSS</h2>\n<ul>\n<li><a href=\"https://github.com/cssinjs/react-jss\">React-JSS</a> integration for React.</li>\n<li><a href=\"https://github.com/nathanmarks/jss-theme-reactor\">Theme Reactor</a> Experimental React integration with theming.</li>\n<li><a href=\"https://github.com/cssinjs/aphrodite-jss\">Aphrodite-JSS</a> provides Aphrodite like api on top of JSS.</li>\n<li><a href=\"https://github.com/milesj/aesthetic/tree/master/packages/aesthetic\">Aesthetic</a> A React style abstraction layer with theme support.</li>\n</ul>\n<h2>TOC</h2>\n<ol>\n<li><a href=\"https://github.com/cssinjs/examples\">Live examples</a>.</li>\n<li><a href=\"./docs/benefits.md\">Benefits</a></li>\n<li><a href=\"./docs/setup.md\">Setup</a></li>\n<li><a href=\"./docs/json-api.md\">JSON API (JSS Syntax)</a></li>\n<li><a href=\"./docs/js-api.md\">JavaScript API</a></li>\n<li><a href=\"./docs/ssr.md\">Server-side rendering</a></li>\n<li><a href=\"./docs/performance.md\">Performance</a></li>\n<li><a href=\"./docs/plugins.md\">Plugins API</a></li>\n<li><a href=\"https://github.com/cssinjs?q=plugin\">Official plugins</a></li>\n<li><a href=\"./docs/external-projects.md\">External projects</a></li>\n<li><a href=\"https://github.com/cssinjs/cli\">CLI Converter</a></li>\n<li><a href=\"./contributing.md\">Contributing</a></li>\n</ol>\n<h2>Example</h2>\n<p>You need to <a href=\"./docs/setup.md#setup-with-plugins\">setup plugins</a> before.\nYou can use a <a href=\"https://github.com/cssinjs/jss-preset-default\">preset</a> for a quick setup with default plugins.</p>\n<pre><span class=\"hljs-keyword\">import</span> jss <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;jss&apos;</span>\n<span class=\"hljs-keyword\">import</span> preset <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;jss-preset-default&apos;</span>\n<span class=\"hljs-keyword\">import</span> color <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&apos;color&apos;</span>\n\n<span class=\"hljs-comment\">// One time setup with default plugins and settings.</span>\njss.setup(preset())\n\n<span class=\"hljs-keyword\">const</span> styles = {\n  <span class=\"hljs-attr\">button</span>: {\n    <span class=\"hljs-attr\">fontSize</span>: <span class=\"hljs-number\">12</span>,\n    <span class=\"hljs-string\">&apos;&amp;:hover&apos;</span>: {\n      <span class=\"hljs-attr\">background</span>: <span class=\"hljs-string\">&apos;blue&apos;</span>\n    }\n  },\n  <span class=\"hljs-attr\">ctaButton</span>: {\n    <span class=\"hljs-attr\">extend</span>: <span class=\"hljs-string\">&apos;button&apos;</span>,\n    <span class=\"hljs-string\">&apos;&amp;:hover&apos;</span>: {\n      <span class=\"hljs-attr\">background</span>: color(<span class=\"hljs-string\">&apos;blue&apos;</span>).darken(<span class=\"hljs-number\">0.3</span>).hex()\n    }\n  },\n  <span class=\"hljs-string\">&apos;@media (min-width: 1024px)&apos;</span>: {\n    <span class=\"hljs-attr\">button</span>: {\n      <span class=\"hljs-attr\">width</span>: <span class=\"hljs-number\">200</span>\n    }\n  }\n}\n\n<span class=\"hljs-keyword\">const</span> {classes} = jss.createStyleSheet(styles).attach()\n\n<span class=\"hljs-built_in\">document</span>.body.innerHTML = <span class=\"hljs-string\">`\n  &lt;button class=&quot;<span class=\"hljs-subst\">${classes.button}</span>&quot;&gt;Button&lt;/button&gt;\n  &lt;button class=&quot;<span class=\"hljs-subst\">${classes.ctaButton}</span>&quot;&gt;CTA Button&lt;/button&gt;\n`</span></pre><p>Result</p>\n<pre><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">head</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">style</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">&quot;text/css&quot;</span>&gt;</span><span class=\"css\">\n    <span class=\"hljs-selector-class\">.button-123456</span> {\n      <span class=\"hljs-attribute\">font-size</span>: <span class=\"hljs-number\">12px</span>;\n    }\n    <span class=\"hljs-selector-class\">.button-123456</span><span class=\"hljs-selector-pseudo\">:hover</span> {\n      <span class=\"hljs-attribute\">background</span>: blue;\n    }\n    <span class=\"hljs-selector-class\">.ctaButton-789012</span> {\n      <span class=\"hljs-attribute\">font-size</span>: <span class=\"hljs-number\">12px</span>;\n    }\n    <span class=\"hljs-selector-class\">.ctaButton-789012</span><span class=\"hljs-selector-pseudo\">:hover</span> {\n      <span class=\"hljs-attribute\">background</span>: red;\n    }\n    @<span class=\"hljs-keyword\">media</span> (min-width: <span class=\"hljs-number\">1024px</span>) {\n      <span class=\"hljs-selector-class\">.button-123456</span> {\n        <span class=\"hljs-attribute\">min-width</span>: <span class=\"hljs-number\">200px</span>;\n      }\n    }\n  </span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">style</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">head</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">body</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;button-123456&quot;</span>&gt;</span>Button<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;ctaButton-789012&quot;</span>&gt;</span>CTA Button<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">body</span>&gt;</span></pre><h2>When should I use it?</h2>\n<ul>\n<li>You build a JavaScript heavy application.</li>\n<li>You use components based architecture.</li>\n<li>You build a reusable UI library.</li>\n<li>You need a collision free CSS (external content, third-party UI components ...).</li>\n<li>You need code sharing between js and css.</li>\n<li>Minimal download size is important to you.</li>\n<li>Robustness and code reuse is important to you.</li>\n<li>Ease of maintenance is important to you.</li>\n<li>You just want to use any of its <a href=\"./docs/benefits.md\">benefits</a></li>\n</ul>\n<h2>Roadmap</h2>\n<ul>\n<li>Make it easier for newcomers to setup jss with plugins (like presets).</li>\n<li>Make JSON DSL even better, for e.g. <a href=\"https://github.com/typical000/jss-expand\">jss-expand</a>.</li>\n<li>Make it easy to see when changes in the core break plugins (integrate plugins test suite).</li>\n<li>Make community create plugins (better plugins API documentation, infrastructure).</li>\n<li>Do more benchmarking, include plugins, always track perf regressions.</li>\n<li>Introduce a way for theming with react-jss or replace it by <a href=\"https://github.com/nathanmarks/jss-theme-reactor\">jss-theme-reactor</a></li>\n<li>Make SSR even better (vendor prefixer, smaller critical CSS)</li>\n<li>Make CLI tool better, allow integration of styles written in various preprocessing languages as well as pure css.</li>\n<li>React Native support.</li>\n<li>Add converters stylus, sass and co. to <a href=\"https://github.com/cssinjs/cli\">cli</a> with constants reuse.</li>\n</ul>\n<h2>Browsers Support</h2>\n<p>We have automated tests running in <a href=\"./browsers.json\">real browsers</a>.</p>\n<h2>License</h2>\n<p>MIT</p>\n<h2>Thanks</h2>\n<p>Thanks to <a href=\"https://www.browserstack.com\">BrowserStack</a> for providing the infrastructure that allows us to run our tests in real browsers and to all awesome <a href=\"https://github.com/cssinjs/jss/graphs/contributors\">contributors</a>.</p>\n"
     }
   ]
 }
